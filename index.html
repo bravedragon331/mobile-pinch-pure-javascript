@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Sandbox</title>
+
+    <link href="css/bootstrap/bootstrap-3.3.5.min.css" rel="stylesheet">
+    <link href="css/sandbox.css" rel="stylesheet">
+    <style>        
+        #envelope {
+            background: white;
+            border: 1px solid black;
+        } 
+        body{
+            touch-action:none
+        }
+    </style>
+</head>
+
+
+<body class="mobile" onload="init();" style="touch-action:none;">
+    <div class="fixed-top">
+        <div class="info-bar-wrapper">
+            <div class="info-bar">
+                <div class="wrapper">
+                    <div class="info-message-wrapper cell">
+                        <div class="info-message">
+                            Click the "Start" button to begin guided signing
+                        </div>
+                    </div>
+                    <div class="right cell">
+                        <button class="btn btn-info-next" type="button" style="display: inline-block;">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear" style="clear: both; height: 51px;"></div>
+
+    <div class="container-fluid signing-body">    
+        <div id="scale"></div>    
+        <!-- Start Page Content -->
+        <div id="envelope">
+            <div class="documents-wrapper">
+                <div id="overlay-container">
+                    <div id="navigate-container">
+                        <div class="zoom-container">
+                            <div id="page-view" class="col-xs-12">
+                                <div class="page-container">
+                                    <div class="page zoom-level-100 ui-droppable">
+                                        <img class="image" src="img/page1.png">
+                                    </div>
+                                </div>
+                                <div class="page-container">
+                                    <div class="page zoom-level-100 ui-droppable">
+                                        <img class="image" src="img/page2.png">
+                                    </div>
+                                </div>
+                                <div class="page-container">
+                                    <div class="page zoom-level-100 ui-droppable">
+                                        <img class="image" src="img/page1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script type='text/javascript' src="js/jquery/jquery-3.2.1.min.js"></script>
+<script type='text/javascript' src="js/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script type='text/javascript' src="node_modules/hammerjs/hammer.min.js"></script>
+<script type='text/javascript' src="js/sandbox.js"></script>
+
+</body>
+
+</html>

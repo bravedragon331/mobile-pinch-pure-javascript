@@ -1,0 +1,160 @@
+body {
+    padding-top: 0;
+    background-color: #F0F0F0;
+}
+
+.fixed-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index : 5;
+    display: none;
+}
+
+body.mobile .fixed-top {
+    display: block;
+}
+
+.info-bar-wrapper {
+    color: #FFF;
+    min-height: 50px;
+    background-color: #1ca971;
+}
+
+body.mobile .info-bar .wrapper {
+    padding: 5px 7px;
+    max-width: 1506px;
+    margin: 0 auto;
+}
+
+body.mobile .info-bar .cell {
+    display: table-cell;
+}
+
+.info-bar .info-message-wrapper {
+    vertical-align: middle;
+    padding: 7px 1px 4px 15px;
+    width: 100%;
+}
+
+.info-bar .info-message {
+    font-size: 12px;
+}
+
+.info-bar .cell.right {
+    float: none;
+    white-space: nowrap;
+    padding: 0!important;
+    text-align: right;
+}
+
+.info-bar .btn-info-next,
+.info-bar .btn-finish {
+    margin-top: .23em;
+    background-color: #0b9753;
+    color: #FFF;
+}
+
+.info-bar .btn-info-next:active {
+    color: #FFF;
+}
+
+.signing-body {
+    padding: 0;
+}
+
+#envelope>.wrapper {
+    position: relative;
+}
+
+#envelope,
+#envelope>.wrapper,
+#envelope>.wrapper>.c-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.documents-wrapper {
+    position: relative;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.documents {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#overlay-container {
+    position: relative;
+    transition: margin-bottom .4s ease 0s;
+}
+
+#navigate-container {
+    width: auto;
+    margin: 0 auto;}
+
+body.mobile #navigate-container {
+    padding-top: 20px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.zoom-container {
+    overflow: auto;
+    position: relative;
+}
+
+body.zoom-container {
+    display: inline-block;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+}
+
+body.mobile #page-view {
+    margin-top: 0;
+}
+
+body.mobile .page.zoom-level-100    {  width: 100%; }
+
+.page-container {
+    margin-bottom: 50px;
+}
+
+.page {
+    border: 1px solid #DADADA;
+    background-color: #FFF;
+    width: 850px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.image {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    z-index: 99;
+    background-color: white;
+    box-sizing: content-box;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+
